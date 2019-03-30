@@ -1,4 +1,4 @@
-//I think this is not needed for what is asked in assignment
+// this is not needed because it is done by fetchSelectedUserReducer
 export default function a(state=[], action) {
   switch(action.type) {
     case 'USER_CLICKED':
