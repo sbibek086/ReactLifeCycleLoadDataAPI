@@ -29,18 +29,17 @@ export function selectUser(user) {
 
   export function userList() {
   //const url = 'https://jsonplaceholder.typicode.com/posts';
+  
+  return function(dispatch) {
+    const request = axios.get(url);
 
-  const request = axios.get(url);
-
-  request.then(response => {
-    dispatch ({
-  
-      type: FETCH_USERS,
-      payload: response.data
-  
-    })
-  
-  })
+    request.then(response => {
+      dispatch ({
+        type: FETCH_USERS,
+        payload: response.data
+      })
+    }).catch(err => console.log(err))
+  }  
 }
 
 

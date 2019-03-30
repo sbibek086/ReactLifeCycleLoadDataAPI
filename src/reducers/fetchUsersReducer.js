@@ -1,6 +1,7 @@
-/*
-import {FETCH_USERS} from '../actions/constants';
 
+import { FETCH_USERS } from '../actions/constants';
+
+/*
 const initState = {
     users: []
 }

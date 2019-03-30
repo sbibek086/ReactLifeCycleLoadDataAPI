@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { selectUser, getUsersList } from '../actions/index';
+import { selectUser, userList } from '../actions/index';
 
 
 
 class UserList extends Component {
-
-
+    constructor() {
+        super();
+      }
+  
   renderUsersList() {
     let counter = 0;
     return this.props.userList.map((user) => {
