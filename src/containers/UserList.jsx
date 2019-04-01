@@ -7,9 +7,13 @@ import { selectUser, userList } from '../actions/index';
 
 
 class UserList extends Component {
-    constructor() {
-        super();
-      }
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      userList: [],
+    };
+  }
   
   renderUsersList() {
     let counter = 0;
@@ -17,7 +21,7 @@ class UserList extends Component {
       counter = counter +1;
       return(
         <li
-          onClick={() => {this.props.selectUser(user)}}
+          onClick={() => {this.props.selectedUser(user)}}
           key={counter}
           className="list-group-item">
           <p> Title: {user.title} </p>
