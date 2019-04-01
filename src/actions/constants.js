@@ -1,1 +1,1 @@
-export const FETCH_ANIMALS = 'FETCH_ANIMALS';
+export const FETCH_USERS = 'FETCH_USERS';

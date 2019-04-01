@@ -1,45 +1,45 @@
 
 import axios from 'axios';
-import { FETCH_ANIMALS } from './constants';
+import { FETCH_USERS } from './constants';
+const url = 'https://jsonplaceholder.typicode.com/posts';
 
-
-export function selectAnimal(animal) {
+export function selectUser(user) {
   return {
-    type: 'ANIMAL_CLICKED',
-    payload: animal,
+    type: 'USER_CLICKED',
+    payload: user,
   }
 }
 
-//this commented was for fetching hard coded animal list
-/*export function fetchAnimals(){
+//this commented was for fetching hard coded user list
+/*export function fetchUsers(){
   //do some AJAX ->  let response = do AJAX magic here
 
   return {
-    type : 'FETCH_ANIMAL',
+    type : 'FETCH_USER',
     payload : response
   }
 } */
 
-//this is our AnimalList get method
+//this is our UserList get method
 
 
 
 
-export function getAnimalsList() {
+//export function getUsersList() {
 
-  const url = 'https://jsonplaceholder.typicode.com/posts';
-
-  const request = axios.get(url);
-
-  request.then(response => {
-    return ({
+  export function userList() {
+  //const url = 'https://jsonplaceholder.typicode.com/posts';
   
-      type: FETCH_ANIMALS,
-      payload: response.data
-  
-    })
-  
-  })
+  return function(dispatch) {
+    const request = axios.get(url);
+
+    request.then(response => {
+      dispatch ({
+        type: FETCH_USERS,
+        payload: response.data
+      })
+    }).catch(err => console.log(err))
+  }  
 }
 
 

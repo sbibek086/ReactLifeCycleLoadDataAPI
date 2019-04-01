@@ -9,13 +9,13 @@ class App extends Component {
 
     return(
     <div className="container app-container">
-      <h4>Hello to zookeper</h4>
+      <h4>Hello to User List</h4>
       <div className="row">
         <div className="col-4">
           <UserList/>
         </div>
         <div className="col-8">
-          <UserDetails />
+          <UserDetails/>
         </div>
       </div>
     </div>
