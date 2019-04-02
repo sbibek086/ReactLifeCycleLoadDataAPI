@@ -41,22 +41,24 @@ class UserList extends Component {
 }
 
 function mapStateToProps(state){
- 
+  console.log(state);
   return {
     //users : state.users,
-    selectedUser: state.selectedUser,
-    userList: state.userList,
+    selectedUser: state.selectedUser.selectedUser,
+    userList: state.userList.userList,
   }
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({
-    selectUser : selectUser,
+  //return bindActionCreators({
+   // selectUser : selectUser,
 
-  }, dispatch)
+  //}, dispatch)
+
+  return { 
+    selectUser: (user)=> dispatch (selectUser(user))
+  }
 }
 
-//export default AnimalList;
-//wrapped component -> higher order component
-//the order counts here, 1st mapStateToProps, 2nd mapDispatchToProps
+
 export default connect(mapStateToProps, mapDispatchToProps)(UserList);
