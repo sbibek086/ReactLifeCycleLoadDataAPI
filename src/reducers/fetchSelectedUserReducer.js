@@ -1,6 +1,6 @@
 //immediate below block not necessary
 const initState = {
-    userList: []
+    selectedUser: []
 } 
 
 
@@ -20,7 +20,7 @@ export default function(state = initState, action) {
         case 'USER_CLICKED':
         return {
             ...state,
-            fetchSelectedUserReducer:action.payload
+            selectedUser:action.payload
            
         }
 

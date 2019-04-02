@@ -5,7 +5,7 @@ class UserDetails extends Component {
 
     render(){
 
-    console.log('details', this);
+    console.log('details', this.props);
 
     if(!this.props.selectedUser){
       return(
@@ -26,7 +26,7 @@ class UserDetails extends Component {
 
 function mapStateToProps(state){
   return {
-    selectedUser : state.selectedUser
+    selectedUser : state.selectedUser.selectedUser
   }
 }
 

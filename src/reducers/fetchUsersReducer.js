@@ -22,9 +22,8 @@ export default function(state = initState, action) {
     switch(action.type) {
         case FETCH_USERS:
         return {
-            //yo style lai guru Jan le j garechh tyehi gara confusion vayo yesari
             ...state,
-            fetchUsersReducer:action.payload
+            userList:action.payload
         }
 
         
