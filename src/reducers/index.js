@@ -16,7 +16,7 @@ const rootReducer = combineReducers({
   
   selectedUser: fetchUsersReducer, // fetchUsersReducers on LHS is wrong, its selectedUserReducer var that its passing
   userList :fetchSelectedUserReducer
-  //getUsersList: getUsersListReducer,
+  
   
 })
 

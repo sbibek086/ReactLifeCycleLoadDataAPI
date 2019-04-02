@@ -22,15 +22,12 @@ export function selectUser(user) {
 
 //this is our UserList get method
 
-
-
-
 //export function getUsersList() {
 
   export function userList() {
   //const url = 'https://jsonplaceholder.typicode.com/posts';
   
-  return function(dispatch) {
+  //return function(dispatch) {
     const request = axios.get(url);
 
     request.then(response => {
@@ -39,7 +36,7 @@ export function selectUser(user) {
         payload: response.data
       })
     }).catch(err => console.log(err))
-  }  
+  //}  
 }
 
 
