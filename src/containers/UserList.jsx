@@ -21,7 +21,7 @@ class UserList extends Component {
       counter = counter +1;
       return(
         <li
-          onClick={() => {this.props.selectedUser(user)}}
+          onClick={() => {this.props.selectUser(user)}}
           key={counter}
           className="list-group-item">
           <p> Title: {user.title} </p>
