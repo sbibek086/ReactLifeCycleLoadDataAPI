@@ -1,6 +1,6 @@
 # Contributing
 
-`Substrate` projects is a **OPENISH Open Source Project**
+`ReactLifeCycleLoadDataAPI` projects is a **OPENISH Open Source Project**
 
 ## What?
 
