@@ -4,5 +4,7 @@ body {
 
 .app-container {
   min-height: 100vh;
-  background-color: #f55fff;
-}
+  //background-color: #f55fff; 
+  //I changed this background color to black enhancement
+  background-color: #ffffff;  
+ }
