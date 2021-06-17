@@ -1,6 +1,6 @@
 //I copy pasted this code because I amazed by how below code automates CI/CD pipeline in effective way. original location of this yml is in 
 //https://github.com/polkadot-js/extension/blob/master/.github/workflows/push-master.yml
-//I appreciate how much YML automation power can be stretched to new boundaries
+//I appreciate how much YML automation power can be stretched to new boundaries and also to newer boundaries
 name: Master
 on:
   push:
