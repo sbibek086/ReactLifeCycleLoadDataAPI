@@ -1,3 +1,4 @@
+// this file is just giving out which user is clicked, and not the additional info ie. list of selcted user
 const initState = {
     selectedUser: []
 } 
