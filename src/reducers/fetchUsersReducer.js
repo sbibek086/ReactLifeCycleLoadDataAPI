@@ -1,4 +1,5 @@
 
+// this file is just giving out the additional info ie. list of selcted user
 import { FETCH_USERS } from '../actions/constants';
 
 
@@ -15,8 +16,6 @@ const initState = {
     return state;
 }
 */
-
-
 
 export default function(state = initState, action) {
     switch(action.type) {
