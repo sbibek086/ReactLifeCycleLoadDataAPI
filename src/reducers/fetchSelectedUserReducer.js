@@ -1,4 +1,3 @@
-//immediate below block not necessary
 const initState = {
     selectedUser: []
 } 
@@ -20,11 +19,8 @@ export default function(state = initState, action) {    //default means this fun
         case 'USER_CLICKED':
         return {
             ...state,
-            selectedUser:action.payload
-           
-        }
-
-        
+            selectedUser:action.payload      
+        }        
     }
     return state;
 }
