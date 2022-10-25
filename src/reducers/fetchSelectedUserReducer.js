@@ -1,4 +1,6 @@
 // this file is just giving out which user is clicked, and not the additional info ie. list of selcted user
+import { USER_CLICKED } from '../actions/constants';
+
 const initState = {
     selectedUser: []
 } 
