@@ -17,7 +17,6 @@ export function selectUser(user) {
 export function userList() {
   return function(dispatch) {
     const request = axios.get(url);
-
     request.then(response => {
       dispatch({
         type: FETCH_USERS,
