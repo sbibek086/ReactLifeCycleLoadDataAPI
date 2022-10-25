@@ -15,7 +15,7 @@ const initState = {
 
 
 //this below block was first try and then replaced by better above block
-export default function(state = initState, action) {
+export default function(state = initState, action) {    //default means this function name wud be fetchSelectedUserReducer, name of this file.
     switch(action.type) {
         case 'USER_CLICKED':
         return {
