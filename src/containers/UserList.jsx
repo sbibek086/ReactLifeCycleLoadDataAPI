@@ -8,7 +8,7 @@ import { selectUser, userList } from '../actions/index';
 
 class UserList extends Component {
   constructor(props) {
-    super(props);
+    super(props);  //its ritual of referencing back to constructor in parent n is needed after constructor(props)
 
     this.state = {
       userList: [],
