@@ -62,3 +62,5 @@ function mapDispatchToProps(dispatch) {
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(UserList);
+// while component makes UI element to props, Higher.Order.Component makes components like mapStateToProps and mapDispatchToprops
+//to higher order another component. full in https://imgur.com/a/GFtRRAv
